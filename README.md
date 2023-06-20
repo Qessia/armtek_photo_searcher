@@ -1,9 +1,10 @@
 # armtek_photo_searcher
 
 ## Перед использованием
-1. Установить Python 3.10 (к примеру, в Microsoft Store)
-2. Открыть папку с этим проектом в терминале
-3. Прописать в терминале: pip install -r requirements.txt
+1. Убедиться, что установлен Google Chrome (скачать - https://www.google.com/intl/ru_ru/chrome/)
+2. Установить Python 3.10 (к примеру, в Microsoft Store)
+3. Открыть папку с этим проектом в терминале
+4. Прописать в терминале: pip install -r requirements.txt
 
 ## Инструкция по использованию
 1. Переместить копию таблицы (в формате .csv) в папку с проектом
