@@ -75,7 +75,7 @@ class Picfinder:
 
 
 def main():
-    df = pd.read_csv(CSV_TABLE, sep=';', encoding='cp1251', low_memory=False)
+    df = pd.read_csv(CSV_TABLE, sep=';', encoding='utf-8', low_memory=False)
     len_df = len(df)
 
     finder = Picfinder()
@@ -84,7 +84,7 @@ def main():
 
     for index, row in df.iterrows():
         if keyboard.is_pressed("x"):
-            df.to_csv(CSV_TABLE, sep=';', encoding='cp1251', index=False)
+            df.to_csv(CSV_TABLE, sep=';', encoding='utf-8', index=False)
             del finder
             print('Work stopped')
             exit(0)
@@ -95,7 +95,7 @@ def main():
             response, text = publish(finder.find_picture(f'{row[COL_NAME]} {row[COL_MANUF]}'), row[COL_NAME])
             df.at[index, COL_URL] = text
         except KeyboardInterrupt:
-            df.to_csv(CSV_TABLE, sep=';', encoding='cp1251', index=False)
+            df.to_csv(CSV_TABLE, sep=';', encoding='utf-8', index=False)
             del finder
             print('Work stopped')
             exit(0)
@@ -107,7 +107,7 @@ def main():
         finally:
             print(f'[{index + 1} / {len_df}] {row[COL_NAME]} {row[COL_MANUF]}')
 
-    df.to_csv(CSV_TABLE, sep=';', encoding='cp1251', index=False)
+    df.to_csv(CSV_TABLE, sep=';', encoding='utf-8', index=False)
     del finder
     print('COMPLETED')
 
