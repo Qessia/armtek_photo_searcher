@@ -10,7 +10,6 @@ SOURCE = data['Source']
 BLANK = data['Blank']
 ON_COL = data['On_column']
 UPDATE_COL = data['Update_column']
-NEW = 'test.csv'
 
 
 def main():
@@ -27,7 +26,7 @@ def main():
 
     print(f'new len: {len(merged_df)}')
 
-    merged_df.to_csv(NEW, sep=';', encoding='cp1251', index=False)
+    merged_df.to_csv(BLANK, sep=';', encoding='cp1251', index=False)
 
 
 if __name__ == '__main__':
