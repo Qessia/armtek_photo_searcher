@@ -1,0 +1,6 @@
+{
+  "Source": "./arm_s_foto.csv",
+  "Blank": "./arm_bez.csv",
+  "On_column": "Номер",
+  "Update_column": "Фотография"
+}

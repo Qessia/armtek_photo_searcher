@@ -1,7 +1,7 @@
 {
   "Imgbb_API_key" : "6ea520451658da06f90212e4a9649aee",
   "Table" : {
-    "Path_to_file" : "./armtek.csv",
+    "Path_to_file" : "./arm.csv",
     "Column_names" : "Номер",
     "Column_manufacturer" : "Производитель",
     "Column_urls" : "Фотография"
